@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+div {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+</style>
+<script src="6.27/jquery.min.js"></script>
+<script>
+$(function(){
+    $('button').click(function () {
+        $('div').animate({
+            left: '+=100'
+        });
+    })
+});
+    
+</script>
+<body>
+<button>btn</button>
+<div></div>
+</body>
+</html>
